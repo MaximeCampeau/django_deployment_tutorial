@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        display: inline-block;
+        padding: 1rem 0.5rem;
+        margin: 0.5rem 1rem;
+        background-color: #333;
+        color: #fff;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+
+      a:hover {
+        background-color: rgb(88, 86, 86);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Relative Urls Templates</h1>
+    <a href="{% url 'basic_app:other' %}">Access Other Page</a>
+    <a href="{% url 'admin:index' %}">Admin Login Page</a>
+    <a href="{% url 'index' %}">Index Page</a>
+  </body>
+</html>
